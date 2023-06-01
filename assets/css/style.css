@@ -19,8 +19,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 60px;
+    padding: 20px 60px;
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 35px;
 }
 
 .nav-links {
@@ -34,15 +41,78 @@ nav {
     margin-right: 25px;
 }
 
+.links li {
+    margin: 0;
+    padding: 0px 12px;
+}
+
+.links li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.links li a:hover {
+    color: #ff7b00;
+}
+
+.links li .active {
+    color: #f89437;
+}
+
+.login-btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 20px;
+    background-color:  #f89437;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+
+.login-btn a:hover {
+    background-color:  #e97100
+}
+
 .hero {
     position: relative;
     height: 100vh;
-    background-image: url("../image/back.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/back.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .content {
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.content .btn {
+    font-size: 19px;
+    padding: 10px 20px;
+    background-color: #f89437;
+    color: #fff;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+.content .btn:hover {
+    background-color:  #e97100
 }
